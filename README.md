@@ -8,7 +8,7 @@ Finally, you can run the project using the command `node .` in the project folde
 To finish configuring push notifications, we need to configure your raspberry pi’s MotionEye software to send a GET request to this server. To do this, go to the MotionEye configuration page and log in with your admin credentials. In the “Motion Notifications” section, enable the ‘call a web hook’ option and set it to the address of this server.
 
 <p align="center">
-  <img src=“motionEyeConfig.png” width="350"/>
+  <img src=motionEyeConfig.png width="350"/>
 </p>
 
 The specific path of the web hook should be http://thisserver:3001/motionDetected/someCameraNameHere

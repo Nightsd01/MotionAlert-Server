@@ -1,7 +1,7 @@
 # MotionAlert-Server
 MotionAlert Server is a node.js based server that accepts HTTP requests from cameras using the MotionEye interface (usually Raspberry Pi’s) and sends push notifications to iOS devices using the [MotionAlert app](https://github.com/Nightsd01/MotionAlert).
 
-First, follow [Apple’s APNS guide](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html#//apple_ref/doc/uid/TP40008194-CH100-SW1) and create a valid APNS certificate for the app. Once you have this APNS certificate in your keychain, follow [this guide](https://blog.krishan711.com/generating-ios-push-certificates) to extract cert.pem and key.pem files to allow this server to authenticate with the APNS system.  Place the .pem files in the certs/ directory of this project.
+First, run `npm install` in the project folder, to install the necessary npm modules. To set up push notifications, follow [Apple’s APNS guide](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html#//apple_ref/doc/uid/TP40008194-CH100-SW1) and create a valid APNS certificate for the app. Once you have this APNS certificate in your keychain, follow [this guide](https://blog.krishan711.com/generating-ios-push-certificates) to extract cert.pem and key.pem files to allow this server to authenticate with the APNS system.  Place the .pem files in the certs/ directory of this project.
 
 Finally, you can run the project using the command `node .` in the project folder.
 
